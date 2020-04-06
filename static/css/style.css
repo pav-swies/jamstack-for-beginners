@@ -368,6 +368,7 @@ header, section, footer {
   border: 0;
   background-color: transparent;
   padding: 10px;
+  cursor: pointer;
 }
 
 .steps__collapsible-button--active {
@@ -470,5 +471,54 @@ header, section, footer {
 
 .useful-links__link::after {
   content: "-";
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer__back-to-top {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__back-to-top:hover .footer__back-to-top-icon {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__back-to-top-icon {
+  display: block;
+  margin-left: 10px;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #091372;
+  margin-bottom: 40px;
+}
+
+.footer__social {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 150px;
 }
 /*# sourceMappingURL=style.css.map */
