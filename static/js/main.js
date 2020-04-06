@@ -1,4 +1,4 @@
-const heading = document.querySelector('.hero');
+const heading = document.querySelector('body');
 
 function fadeIn() {
   heading.classList.add('animated');

@@ -61,7 +61,15 @@ body {
   font-family: $primary-font;
   font-size: $ant;
   font-weight: 400;
-  color: $blue-light
+  color: $blue-light;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.animated {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.8s ease-in;
 }
 
 p {
@@ -191,19 +199,11 @@ header, section, footer {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  opacity: 0;
-  transform: translateY(-10px);
   
   @include tablet {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-}
-
-.animated {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: 0.8s ease-in;
 }
 
 .hero__subtitle {
@@ -416,6 +416,11 @@ header, section, footer {
   @include tablet {
     font-size: $rabbit;
   }
+}
+
+.useful-links__list {
+  display: flex;
+  justify-content: center;
 }
 
 .useful-links__item {
