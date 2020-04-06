@@ -2,15 +2,174 @@
 
 <section class="hero wrapper">
   <h1 class="hero__title">A begginer's guide to a <span class="underlined">JAMstack</span> website 🤓</h1>
-  <h2 class="hero__subtitle">On this site you'll learn about the basic concept of a JAMstack website, and how you can create your own.</h2>
+  <p class="hero__subtitle">On this site you'll learn about the basic concept of a JAMstack website, and how you can create your own.</p>
+  <nav class="hero__navigation">
+    <ul class="hero__navigation-list">
+      <li class="hero__navigation-item">
+        <a href="#" class="hero__navigation-link">About</a>
+      </li>
+      <li class="hero__navigation-item">
+        <a href="#" class="hero__navigation-link">Getting Started</a>
+      </li>
+      <li class="hero__navigation-item">
+        <a href="#" class="hero__navigation-link">CMS Integration</a>
+      </li>
+      <li class="hero__navigation-item">
+        <a href="#" class="hero__navigation-link">Useful Links</a>
+      </li>
+    </ul>
+  </nav>
   <p class="hero__fact">⭐️Fun Fact: This website is a JAMstack site. It’s built using <a href="https://gohugo.io/">Hugo</a> and hosted by <a href="https://www.netlify.com/">Netlify</a>. You can find the source code for it on <a href="https://github.com/pav-swies/jamstack-for-beginners">GitHub</a>.</p>
 </section>
-<section class="about wrapper--black">
-  <div class="wrapper">
-    <div class="wrapper--narrow">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facilis similique aut consequuntur esse minus eveniet quis ex nulla atque quasi neque reiciendis asperiores, qui eaque hic, recusandae dignissimos corrupti nam? Commodi natus reprehenderit consectetur qui dolores voluptate velit, quae voluptatibus exercitationem dolorum maiores tenetur sit adipisci magnam eius dolore facere culpa quam aliquam modi. Voluptatum, consectetur ducimus debitis aliquid vel pariatur. Laborum eius doloribus error, repudiandae a, ea magni beatae sunt officia illum corporis nostrum tenetur dolorum voluptatibus laudantium ex! Iste natus autem quibusdam dolore praesentium in aut laboriosam temporibus doloribus molestias quod sapiente aliquam aspernatur, reiciendis voluptatem delectus magni laborum facilis alias soluta. Fuga eligendi ullam magnam dolor. Eos laudantium incidunt maiores tenetur aliquam laborum eaque soluta cumque nisi quis corporis temporibus, architecto ea beatae eius cum vero magnam unde rerum. Sequi in tempore dignissimos deleniti, rem expedita, hic a consequuntur mollitia animi culpa recusandae perferendis illum maiores architecto magni iure velit saepe et labore. Recusandae iure optio esse temporibus reprehenderit numquam qui repudiandae error inventore atque aperiam eum at, minima fugiat illum, enim, adipisci dolorem aliquid nihil? Quam placeat est sint, repudiandae laudantium necessitatibus ipsam minus cum sequi aut excepturi numquam quaerat reiciendis. Facilis atque quo hic voluptatum blanditiis, exercitationem voluptates dolorum dolore labore necessitatibus ipsa autem, dolores magni velit aspernatur sunt, est consequatur rerum. Nisi soluta reprehenderit animi voluptas iste. Quas, ducimus eligendi nemo fuga animi sed ab? Rerum consequatur obcaecati placeat. Reiciendis repellendus voluptates architecto sunt reprehenderit neque voluptatibus, quos sed eius quis ab earum accusamus fuga labore natus debitis? Nostrum et quia nesciunt totam. Dicta magnam ipsum mollitia quaerat distinctio quis sit voluptatem sapiente esse sunt minima illum iure sed, sint porro cupiditate reiciendis inventore officiis dolorum error, nam architecto molestiae? Iusto, nulla explicabo. Sit dicta magni, omnis at quam reiciendis enim aspernatur aliquid laboriosam alias. Harum impedit earum, modi eum tempora iure quis praesentium quod ad magni iusto molestiae voluptatibus! Inventore aspernatur libero autem placeat? Dolorum, eum cum quaerat ad alias fugiat iure aut voluptatum incidunt repellat. Harum velit repellendus doloribus. Laudantium quis quas, accusantium similique eos voluptatem veniam nesciunt, porro numquam enim dolorum quia qui maiores veritatis voluptatibus aliquam hic dolores omnis tenetur possimus odio alias quos. Ipsa veritatis totam ducimus recusandae ullam nulla consequatur deserunt dolores, nisi sint qui culpa quidem dolorum explicabo laudantium officiis exercitationem incidunt numquam at vel? Maiores praesentium libero eveniet quas saepe eaque beatae labore aut corporis?</p>
+
+{{ partial "dots.html" }}
+
+<section class="about wrapper">
+  <h2>What is the JAMstack?</h2>
+  <p class="about__description">It’s a way of building a site so that it <span class="underlined">doesn't</span> rely on any web servers or data bases. JAMstack sites are static and pre-built, meaning that they can be served directly from a Content Delivery Network.</p>
+  <section class="benefits wrapper-right">
+    <h2>Benefits of JAMstack</h2>
+    <div class="benefits__card">
+      <h3>Speed 🏎</h3>
+      <p>Because the sites are static and pre-rendered, loading times are much faster compared to dynamic sites, which require the server to rebuild the site each time it’s opened.</p>
+    </div>
+    <div class="benefits__card">
+      <h3>Security 🔒</h3>
+      <p>There are no data bases or servers, therefore there is a much lower chance of a security breach.</p>
+    </div>
+    <div class="benefits__card">
+      <h3>Ease 👌</h3>
+      <p>Since there are no servers or data bases, you don’t need to worry about setting them up. Front-end developers no longer need to mess around with the back-end. It’s a much better development experience!</p>
+    </div>
+    <div class="benefits__card">
+      <h3>Cheap 💵</h3>
+      <p>Again, ditching servers and data bases means you don’t have to pay for them. Hosting can also be free on CDN services such as Netlify.</p>
+    </div>
+  </section>
+</section>
+<section class="experience wrapper">
+  <div class="experience__inner">
+    <h2 class="experience__title">A JAMstack site has a static architecture</h2>
+    <p class="experience__text">This <span class="underlined">does not</span> mean that the user experience has to be static!</p>
+  </div>
+</section>
+<section class="jam wrapper">
+  <div class="jam__inner wrapper-left">
+    <h2>Here's what the JAM stands for</h2>
+    <div class="jam__card">
+      <h3>JavaScript</h3>
+      <p class="jam__text">JavaScript is used to add interactivity and other bells and whistles to the site. Since there are no servers, the browser serves as the runtime.</p>
+    </div>
+    <div class="jam__card">
+      <h3>APIs</h3>
+      <p class="jam__text">Need to pass in data? No problem. APIs are used for external data access.</p>
+    </div>
+    <div class="jam__card">
+      <h3>Markup</h3>
+      <p class="jam__text">Markup files such as Markdown are source files from which the static HTML files can be generated from.</p>
+    </div>
+    <div class="jam__bottom">
+      <div class="point">
+        <p class="point__text">!</p>
+      </div>
+      <p>These technologies enable developers to achieve a dynamic experience on a static website. Keep in mind that a JAMstack site does not need to use all of these. For example, your website doesn’t need to have any JavaScript, it’s optional.</p>
     </div>
   </div>
 </section>
+
+{{ partial "dots.html" }}
+
+<section class="steps wrapper">
+  <div class="steps__inner wrapper-right">
+    <h2>Ready to make your own JAMstack site?</h2>
+    <h3>Let's get started 🚀</h3>
+    <ol class="steps__list">
+      <li class="steps__item">
+        <h4>Create a static website</h4>
+        <p class="steps__p">The first thing you need is a static website. This can be handwritten from the ground up, using a static site generator, or both. The point is that the website is static so that it can be pre-rendered by a CDN.</p>
+        <p class="steps__p">I recommend using a Static Site Generator such as Hugo as it adds tons of functionality to your website, and allows you to integrate a CMS into your website later.</p>
+        <p class="steps__p">You can discover many more Static Site Generators on staticgen.com. Some are simple and only require simple HTML and CSS skills to get going, and some make use of JavaScript frameworks like React.</p>
+      </li>
+      <li class="steps__item">
+        <h4>Upload your site to a Git repository</h4>
+        <p class="steps__p">The CDN will need access to your website so that it can build it. This step can be done at the beginning of creating your website to make use of version control, but it’s not necessary.</p>
+        <p class="steps__p">Once you are ready to publish the site with the latest changes, create a new Git repository on a website such as GitHub, then push the files to the repo. If you already have a repo set up for the site, simply push the latest changes. </p>
+      </li>
+      <li class="steps__item">
+        <h4>Link your Git repo to a CDN</h4>
+        <p class="steps__p">In the CDN service of your choice, create an account and import your website by connecting the Git repository. I recommend using Netlify as it’s very simple and free.</p>
+        <p class="steps__p steps__p--heading">Here's how this process looks like on Netlify:</p>
+        <ol class="steps__small-list">
+          <li>
+            <p class="steps__p">Once you have logged into your account, on the ‘Sites’ tab you will see a green button with the ‘New site from Git’ label. Press it to add your website from its Git repo.</p>
+          </li>
+          <li>
+            <p class="steps__p">Sign in to your Git provider’s account when prompted.</p>
+          </li>
+          <li>
+            <p class="steps__p">Netlify will now display the available repositories. Pick the repository of the website that you want to publish.</p>
+          </li>
+          <li>
+            <p class="steps__p">Now you will be able to pick the branch you want Netlify to deploy your site from and the basic build settings. For example, Hugo uses the ‘hugo’ command to build the website, therefore the ‘Build Command’ setting will be set to ‘hugo’. You can also name the folder you want the site to publish into.</p>
+            <p class="steps__p">Netlify works with some SSGs by default, therefore if you use Hugo, these settings will automatically be filled in for you.</p>
+          </li>
+          <li>
+            <p class="steps__p">Press the green ‘Deploy site’ button. Congratulations! Netlify will now run the build task and publish your website. If everything went well, your website will now be live.</p>
+          </li>
+        </ol>
+        <p class="steps__p">You can now change the name of the website, which will also change the URL. You don’t need to do anything else from here. Every time a change is pushed to the Git repo of your site, Netlify will automatically rebuild and deploy it. 💪 </p>
+      </li>
+    </ol>
+    </div>
+  </div>
+</section>
+<section class="ending wrapper">
+  <p class="ending__heading">Thats it! 🎉</p>
+  <p class="ending__subheading">You now have a <span class="underlined">JAMstack</span> website</p>
+  <p class="ending__text">You can also integrate a static Content Management System into your site if it's built with a static site generator, and some services make it extremely easy.</p>
+</section>
+
+{{ partial "dots.html" }}
+
+<section class="steps wrapper">
+  <div class="steps__inner wrapper-left">
+    <h3>CMS Integration (Optional)</h3>
+    <p class="steps__p">If you’re interested in adding a content management system to your website (and I recommend that you do, especially for blog sites), it’s a very simple process thanks to services such as <a href="https://forestry.io/">Forestry CMS</a>.</p>
+    <p class="steps__p steps__p--heading">This is what the process of integrating Forestry into a Hugo site looks like:</p>
+    <ol class="steps__small-list">
+      <li>
+        <p class="steps__p">On the homepage of Forestry.io, press the ‘Import Your Site Now’ button, then create an account.</p>
+      </li>
+      <li>
+        <p class="steps__p">On the ‘My sites’ page, press the green ‘Add site’ button.</p>
+      </li>
+      <li>
+        <p class="steps__p">Choose the static site generator that your website uses and the version then press next.</p>
+      </li>
+      <li>
+        <p class="steps__p">Choose the Git provider you use and make sure that Quick Setup is checked on then press next.</p>
+      </li>
+      <li>
+        <p class="steps__p">Sign in to your Git account then select the repository and branch of your site then press next.</p>
+      </li>
+    </ol>
+    <p class="steps__p">Forestry will now import your website and in a few short moments you site will have CMS functionality! You can now edit or add new pages amongst many other things. The steps to set this up were just as short and easy as linking a site with Netlify.</p>
+    <p class="steps__p">You can find a list of CMSs on <a href="https://headlesscms.org/">headlesscms.org</a>.</p>
+  </div>
+</section>
+
+{{ partial "dots.html" }}
+
+<section class="useful-links wrapper">
+  <h2 class="useful-links__title">Useful Links 🔍</h2>
+  <p class="useful-links__subtitle">If you’d like to understand the JAMstack, CDNs, SSGs or static CMSs in more depth, I recommend that you check out the following:</p>
+  <ul class="useful-links__list">
+    <li class="useful-links__item">
+      <a href="https://www.staticgen.com/" class="useful-links__link">Staticgen</a><p>A huge list of static site generators</p>
+    </li>
+  </ul>
+</section>
+
+{{ partial "dots.html" }}
 
 {{ end }}
