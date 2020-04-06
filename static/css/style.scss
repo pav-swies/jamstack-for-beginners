@@ -377,11 +377,13 @@ header, section, footer {
 .steps__collapsible-head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .steps__collapsible-button {
   border: 0;
   background-color: transparent;
+  padding: 10px;
 }
 
 .steps__collapsible-button--active {

@@ -359,11 +359,15 @@ header, section, footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .steps__collapsible-button {
   border: 0;
   background-color: transparent;
+  padding: 10px;
 }
 
 .steps__collapsible-button--active {

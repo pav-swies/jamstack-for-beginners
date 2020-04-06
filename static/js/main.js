@@ -1,6 +1,7 @@
 const heading = document.querySelector('body');
 const collapsible = document.querySelector('.steps__collapsible');
 const collapsibleInner = document.querySelector('.steps__collapsible-inner');
+const collapsibleButton = document.querySelector('.steps__collapsible-button');
 const collapsibleIcon = document.querySelector('.steps__collapsible-icon');
 
 function fadeIn() {
@@ -12,7 +13,7 @@ function collapsibleOpen() {
   collapsibleIcon.classList.toggle('steps__collapsible-button--active')
 }
 
-collapsible.addEventListener('click', collapsibleOpen);
+collapsibleButton.addEventListener('click', collapsibleOpen);
 
 window.onload = function animation() {
   this.fadeIn();
