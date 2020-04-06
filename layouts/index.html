@@ -6,16 +6,16 @@
   <nav class="hero__navigation">
     <ul class="hero__navigation-list">
       <li class="hero__navigation-item">
-        <a href="#" class="hero__navigation-link">About</a>
+        <a href="#about" class="hero__navigation-link">About</a>
       </li>
       <li class="hero__navigation-item">
-        <a href="#" class="hero__navigation-link">Getting Started</a>
+        <a href="#start" class="hero__navigation-link">Getting Started</a>
       </li>
       <li class="hero__navigation-item">
-        <a href="#" class="hero__navigation-link">CMS Integration</a>
+        <a href="#cms" class="hero__navigation-link">CMS Integration</a>
       </li>
       <li class="hero__navigation-item">
-        <a href="#" class="hero__navigation-link">Useful Links</a>
+        <a href="#links" class="hero__navigation-link">Useful Links</a>
       </li>
     </ul>
   </nav>
@@ -24,7 +24,7 @@
 
 {{ partial "dots.html" }}
 
-<section class="about wrapper">
+<section class="about wrapper" id="about">
   <h2>What is the JAMstack?</h2>
   <p class="about__description">It’s a way of building a site so that it <span class="underlined">doesn't</span> rely on any web servers or data bases. JAMstack sites are static and pre-built, meaning that they can be served directly from a Content Delivery Network.</p>
   <section class="benefits wrapper-right">
@@ -79,7 +79,7 @@
 
 {{ partial "dots.html" }}
 
-<section class="steps wrapper">
+<section class="steps wrapper" id="start">
   <div class="steps__inner wrapper-right">
     <h2>Ready to make your own JAMstack site?</h2>
     <h3>Let's get started 🚀</h3>
@@ -131,7 +131,7 @@
 
 {{ partial "dots.html" }}
 
-<section class="steps wrapper">
+<section class="steps wrapper" id="cms">
   <div class="steps__inner wrapper-left">
     <h3>CMS Integration (Optional)</h3>
     <p class="steps__p">If you’re interested in adding a content management system to your website (and I recommend that you do, especially for blog sites), it’s a very simple process thanks to services such as <a href="https://forestry.io/">Forestry CMS</a>.</p>
@@ -160,7 +160,7 @@
 
 {{ partial "dots.html" }}
 
-<section class="useful-links wrapper">
+<section class="useful-links wrapper" id="links">
   <h2 class="useful-links__title">Useful Links 🔍</h2>
   <p class="useful-links__subtitle">If you’d like to understand the JAMstack, CDNs, SSGs or static CMSs in more depth, I recommend that you check out the following:</p>
   <ul class="useful-links__list">
