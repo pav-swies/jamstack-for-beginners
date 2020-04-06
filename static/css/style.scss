@@ -365,6 +365,36 @@ header, section, footer {
 
 .steps__small-list {
   padding-left: 20px;
+  margin: 20px 0;
+}
+
+.steps__collapsible {
+  background-color: $yellow;
+  padding: 30px;
+  border-radius: $border-radius;
+}
+
+.steps__collapsible-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps__collapsible-button {
+  border: 0;
+  background-color: transparent;
+}
+
+.steps__collapsible-button--active {
+  transform: rotate(45deg);
+  transition: $transition;
+}
+
+.steps__collapsible-inner {
+  display: none;
+}
+
+.steps__collapsible-inner--active {
+  display: block;
 }
 
 // end of steps
@@ -420,17 +450,21 @@ header, section, footer {
 
 .useful-links__list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .useful-links__item {
   display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 .useful-links__link {
   color: $blue;
   font-weight: 700;
   margin-right: 20px;
+  display: block;
 
   &::after {
     content: "-";
