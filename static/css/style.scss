@@ -191,11 +191,19 @@ header, section, footer {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-10px);
   
   @include tablet {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+}
+
+.animated {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 0.8s ease-in;
 }
 
 .hero__subtitle {
