@@ -81,6 +81,7 @@ p {
 a {
   color: inherit;
   text-decoration: underline;
+  color: $blue;
 }
 
 ul {
@@ -245,6 +246,7 @@ header, section, footer {
   text-decoration: none;
   padding: 10px 20px;
   display: block;
+  color: $white;
 }
 
 // about
